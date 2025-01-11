@@ -40,9 +40,65 @@
         ul {
             color: #34495e;
         }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .navbar input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .navbar button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 5px;
+            background-color: #e67e22;
+            color: white;
+            cursor: pointer;
+        }
+        .navbar button:hover {
+            background-color: #d35400;
+        }
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <div class="logo">Energy</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="solar.html">Solar</a>
+            <a href="wind.html">Wind</a>
+            <a href="hydropower.html">Hydropower</a>
+            <a href="biomass.html">Biomass</a>
+            <a href="geothermal.html">Geothermal</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
     <a href="index.html" class="back-link">&larr; Back to Home</a>
     <h1>Hydropower</h1>
     <p>Hydropower, also known as hydroelectric power, is the energy that is harnessed from moving water. It is a renewable and sustainable source of energy that can be used for electricity generation.</p>
