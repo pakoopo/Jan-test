@@ -8,48 +8,30 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            line-height: 1.6;
         }
         h1 {
-            color: green;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
         }
         ul {
-            list-style-type: square;
+            list-style-type: disc;
+            margin-left: 20px;
         }
         .image-container {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             margin-top: 20px;
+            justify-content: center;
         }
         .image-container img {
-            width: 200px;
+            width: 250px;
             height: auto;
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
             border-radius: 10px;
-        }
-        .tile-container {
-            display: none; /* Ukryj kafelki */
-        }
-        .tile {
-            width: 200px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            overflow: hidden;
-            text-align: center;
-            text-decoration: none;
-            color: black;
-        }
-        .tile img {
-            width: 100%;
-            height: auto;
-        }
-        .tile h2 {
-            margin: 10px 0;
-            font-size: 1.2em;
-        }
-        .tile p {
-            padding: 0 10px 10px;
-            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -70,9 +52,6 @@
         <img src="hydropower.jpg" alt="Hydropower">
         <img src="biomass.jpg" alt="Biomass Energy">
         <img src="geothermal.jpg" alt="Geothermal Energy">
-    </div>
-    <div class="tile-container">
-        <!-- Kafelki zostały ukryte -->
     </div>
 </body>
 </html>
