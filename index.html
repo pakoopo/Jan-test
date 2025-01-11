@@ -15,6 +15,18 @@
         ul {
             list-style-type: square;
         }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -28,5 +40,12 @@
         <li>Geothermal Energy</li>
     </ul>
     <p>These energy sources are crucial for reducing greenhouse gas emissions and combating climate change.</p>
+    <div class="image-container">
+        <img src="solar.jpg" alt="Solar Energy">
+        <img src="wind.jpg" alt="Wind Energy">
+        <img src="hydropower.jpg" alt="Hydropower">
+        <img src="biomass.jpg" alt="Biomass Energy">
+        <img src="geothermal.jpg" alt="Geothermal Energy">
+    </div>
 </body>
 </html>
