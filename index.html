@@ -19,19 +19,36 @@
             list-style-type: disc;
             margin-left: 20px;
         }
-        .image-container {
+        .tile-container {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             margin-top: 20px;
             justify-content: center;
         }
-        .image-container img {
+        .tile {
             width: 250px;
-            height: auto;
             border: 1px solid #ddd;
             border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            text-decoration: none;
+            color: black;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .tile img {
+            width: 100%;
+            height: auto;
+        }
+        .tile h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #2c3e50;
+        }
+        .tile p {
+            padding: 0 10px 10px;
+            font-size: 1em;
+            color: #7f8c8d;
         }
     </style>
 </head>
@@ -46,12 +63,32 @@
         <li>Geothermal Energy</li>
     </ul>
     <p>These energy sources are crucial for reducing greenhouse gas emissions and combating climate change.</p>
-    <div class="image-container">
-        <img src="solar.jpg" alt="Solar Energy">
-        <img src="wind.jpg" alt="Wind Energy">
-        <img src="hydropower.jpg" alt="Hydropower">
-        <img src="biomass.jpg" alt="Biomass Energy">
-        <img src="geothermal.jpg" alt="Geothermal Energy">
+    <div class="tile-container">
+        <a href="solar.html" class="tile">
+            <img src="solar.jpg" alt="Solar Energy">
+            <h2>Solar Energy</h2>
+            <p>Learn more about solar energy.</p>
+        </a>
+        <a href="wind.html" class="tile">
+            <img src="wind.jpg" alt="Wind Energy">
+            <h2>Wind Energy</h2>
+            <p>Learn more about wind energy.</p>
+        </a>
+        <a href="hydropower.html" class="tile">
+            <img src="hydropower.jpg" alt="Hydropower">
+            <h2>Hydropower</h2>
+            <p>Learn more about hydropower.</p>
+        </a>
+        <a href="biomass.html" class="tile">
+            <img src="biomass.jpg" alt="Biomass Energy">
+            <h2>Biomass Energy</h2>
+            <p>Learn more about biomass energy.</p>
+        </a>
+        <a href="geothermal.html" class="tile">
+            <img src="geothermal.jpg" alt="Geothermal Energy">
+            <h2>Geothermal Energy</h2>
+            <p>Learn more about geothermal energy.</p>
+        </a>
     </div>
 </body>
 </html>
